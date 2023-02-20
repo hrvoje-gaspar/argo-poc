@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: manifests/cluster-install
+    path: argo-poc/apps/argocd/manifests/cluster-install
     repoURL: https://github.com/hrvoje-gaspar/argo-cd
     targetRevision: HEAD
 
