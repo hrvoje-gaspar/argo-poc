@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: app-of-apps
-  namespace: argo-apps
+  namespace: argocd
 spec:
   destination:
-    namespace: argo-apps
+    namespace: appofapps
     server: https://kubernetes.default.svc
   project: default
   source:
