@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd
-  namespace: argocd
+  name: app-of-apps
+  namespace: argo-apps
 spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argo-poc/apps/argocd/manifests/cluster-install
+    path: apps/argocd/app-of-apps
     repoURL: https://github.com/hrvoje-gaspar/argo-cd
     targetRevision: HEAD
 
