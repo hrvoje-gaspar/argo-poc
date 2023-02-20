@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cert manager
+spec:
+  destination:
+    name: ''
+    namespace: default
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: ''
+    repoURL: 'https://charts.jetstack.io'
+    targetRevision: v1.11.0
+    chart: cert-manager
+    helm:
+      parameters:
+      - name: prometheus.enabled      
+        value: false
+      - name: webhook.timeoutSeconds     
+        value: 10
+  sources: []
+  project: default
