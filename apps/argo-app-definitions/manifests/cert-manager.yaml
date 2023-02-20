@@ -19,5 +19,7 @@ spec:
         value: "false"
       - name: webhook.timeoutSeconds     
         value: "10"
+      - name: installCRDs
+        value: "true"
   sources: []
   project: default
