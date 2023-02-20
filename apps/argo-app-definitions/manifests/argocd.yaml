@@ -12,7 +12,3 @@ spec:
     path: apps/argocd/manifests/cluster-install
     repoURL: https://github.com/hrvoje-gaspar/argo-poc
     targetRevision: HEAD
-  syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
