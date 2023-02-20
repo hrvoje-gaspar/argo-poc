@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/argo-workflows/manifests/namespace-install
+    path: apps/argo-events/manifests/namespace-install
     repoURL: https://github.com/hrvoje-gaspar/argo-poc
     targetRevision: HEAD
