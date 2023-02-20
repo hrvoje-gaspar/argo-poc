@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-workflows
+  namespace: argo-workflows
+spec:
+  destination:
+    namespace: argo-workflows
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: apps/argo-workflows/manifests/cluster-install
+    repoURL: https://github.com/hrvoje-gaspar/argo-poc
+    targetRevision: HEAD
