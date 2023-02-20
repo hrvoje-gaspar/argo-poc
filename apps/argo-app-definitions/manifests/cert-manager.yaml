@@ -16,8 +16,8 @@ spec:
     helm:
       parameters:
       - name: prometheus.enabled      
-        value: false
+        value: "false"
       - name: webhook.timeoutSeconds     
-        value: 10
+        value: "10"
   sources: []
   project: default
