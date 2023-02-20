@@ -12,4 +12,7 @@ spec:
     path: apps/argo-app-definitions/manifests
     repoURL: https://github.com/hrvoje-gaspar/argo-cd
     targetRevision: HEAD
-
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
