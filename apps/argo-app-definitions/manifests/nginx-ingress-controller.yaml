@@ -20,14 +20,10 @@ spec:
         value: 'linux'
       - name: controller.image.digest     
         value: ''
-      - name: controller.admissionWebhooks.patch.nodeSelector.kubernetes.io/os     
-        value: 'linux'
       - name: controller.service.annotations.service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path     
         value: '/healthz'
       - name: controller.admissionWebhooks.patch.image.digest     
         value: ''
-      - name: defaultBackend.nodeSelector.kubernetes.io/os     
-        value: 'linux'
       - name: defaultBackend.image.digest     
         value: ''
   sources: []
