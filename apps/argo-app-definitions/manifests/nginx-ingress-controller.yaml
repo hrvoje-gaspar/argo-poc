@@ -16,8 +16,6 @@ spec:
       parameters:
       - name: controller.replicaCount      
         value: '2'
-      - name: controller.nodeSelector.kubernetes.io/os     
-        value: 'linux'
       - name: controller.image.digest     
         value: ''
       - name: controller.service.annotations.service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path     
