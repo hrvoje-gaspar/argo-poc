@@ -11,5 +11,5 @@ spec:
   source:
     path: manifests/cluster-install
     repoURL: https://github.com/hrvoje-gaspar/argo-cd
-    targetRevision: v2.6.0
+    targetRevision: HEAD
 
