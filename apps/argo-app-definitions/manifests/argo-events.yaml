@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-events
+  namespace: argocd
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: apps/argo-workflows/manifests/namespace-install
+    repoURL: https://github.com/hrvoje-gaspar/argo-poc
+    targetRevision: HEAD
