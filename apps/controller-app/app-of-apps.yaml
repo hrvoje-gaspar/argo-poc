@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: apps/argocd/app-of-apps
+    path: apps/argocd/argo-app-definitions/manifests
     repoURL: https://github.com/hrvoje-gaspar/argo-cd
     targetRevision: HEAD
 
