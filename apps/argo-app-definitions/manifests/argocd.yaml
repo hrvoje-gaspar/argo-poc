@@ -5,12 +5,13 @@ metadata:
   namespace: argocd
 spec:
   destination:
+    name: argocd
     namespace: argocd
     server: https://kubernetes.default.svc
   project: default
   source:
     path: apps/argocd/manifests/cluster-install
-    repoURL: https://github.com/hrvoje-gaspar/argo-cd
+    repoURL: https://github.com/hrvoje-gaspar/argo-poc
     targetRevision: HEAD
   syncPolicy:
     automated:

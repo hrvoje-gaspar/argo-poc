@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: apps/argo-app-definitions/manifests
-    repoURL: https://github.com/hrvoje-gaspar/argo-cd
+    repoURL: https://github.com/hrvoje-gaspar/argo-poc
     targetRevision: HEAD
   syncPolicy:
     automated:
