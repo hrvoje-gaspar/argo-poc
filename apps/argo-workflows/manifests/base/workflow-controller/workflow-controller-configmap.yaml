@@ -16,5 +16,6 @@ data:
       - openid
       - profile
       - email
+      - groups
     rbac:
       enabled: false
