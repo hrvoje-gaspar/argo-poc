@@ -2,3 +2,19 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: workflow-controller-configmap
+data: 
+  sso: >
+    issuer: http://192.168.49.2:32759/realms/master
+    clientId: 
+      name: argocd-secret
+      key:  oidc.azure.clientID
+    clientSecret:
+      name: argocd-secret
+      key: oidc.azure.clientSecret
+    redirectUrl: https://192.168.49.2:32550/oauth2/callback
+    scopes:
+      - openid
+      - profile
+      - email
+    rbac:
+      enabled: false
