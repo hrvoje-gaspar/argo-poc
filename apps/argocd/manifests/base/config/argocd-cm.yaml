@@ -5,3 +5,19 @@ metadata:
   labels:
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
+data:
+  oidc.config: >
+    name: KeyCloak
+
+    issuer:
+    http://192.168.49.2:32759/realms/master
+
+    clientID: 415e1e6e-b1dd-11ed-afa1-0242ac120002
+
+    clientSecret: $oidc.azure.clientSecret
+
+    requestedIDTokenClaims:
+      groups:
+          essential: false
+    requestedScopes: ["openid", "profile", "email", "groups"]
+  url: https://192.168.49.2:32070/
