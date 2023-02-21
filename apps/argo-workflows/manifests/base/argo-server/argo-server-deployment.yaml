@@ -22,7 +22,7 @@ spec:
             capabilities:
               drop:
                 - ALL
-          args: [ "server", "--auth=sso" ]
+          args: [ "server", "--auth-mode=sso" ]
           env: []
           ports:
             - name: web
